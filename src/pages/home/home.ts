@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { MusicPage } from '../page';
 
 @Component({
   selector: 'page-home',
@@ -11,4 +12,7 @@ export class HomePage {
 
   }
 
+  goToMusicPage(audio) {
+    this.navCtrl.push(MusicPage,  { audio } );
+  }
 }

@@ -1,14 +1,36 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
-      Ionic Blank
+      Music Player
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+
+  <div class="imageBtn" (click)="goToMusicPage('ocean-waves')">
+    <div class="image" style="background-image:url('assets/imgs/ocean-waves.jpg');"></div>
+    <div class="label">Ocean Waves</div>
+  </div>
+
+  <div class="imageBtn" (click)="goToMusicPage('forest')">
+    <div class="image" style="background-image:url('assets/imgs/forest.jpg');"></div>
+    <div class="label">Forest</div>
+  </div>
+
+  <div class="imageBtn" (click)="goToMusicPage('night-wildlife')">
+    <div class="image" style="background-image:url('assets/imgs/night-wildlife.jpg');"></div>
+    <div class="label">Night Wildlife</div>
+  </div>
+
+  <div class="imageBtn" (click)="goToMusicPage('rain-storm')">
+    <div class="image" style="background-image:url('assets/imgs/rain-storm.jpg');"></div>
+    <div class="label">Rain Storm</div>
+  </div>
+
+  <div class="imageBtn" (click)="goToMusicPage('water-flowing')">
+    <div class="image" style="background-image:url('assets/imgs/water-flowing.jpg');"></div>
+    <div class="label">Water Flowing</div>
+  </div>
+
 </ion-content>
